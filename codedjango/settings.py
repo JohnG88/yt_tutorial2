@@ -1,3 +1,6 @@
+# Use this line to push to git hub:
+    # git push --set-upstream django_tutorial2 master
+
 """
 Django settings for codedjango project.
 
