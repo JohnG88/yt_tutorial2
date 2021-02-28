@@ -15,3 +15,12 @@ page = requests.get(
 
 def home(request):
     return render(request, 'base.html')
+
+def new_search(request):
+    search  = request.POST.get('search')
+
+    # To send to front-end, same as using context = {'search': search}
+    stuff_for_frontend = {'search': search}
+    print(search)
+
+    return render(request, 'new_search.html', stuff_for_frontend)
