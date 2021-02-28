@@ -13,3 +13,5 @@ page = requests.get(
 '''
 # Create your views here.
 
+def home(request):
+    return render(request, 'base.html')
